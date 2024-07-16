@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>React JS</h1>
+
+        <div class="camiseta">
+            <img class="camiseta__imagen" src="img/3.jpg" alt="imagen del producto">
+            <div class="camiseta__contenido">
+                <p>Quisque elementum placerat tortor, nec lobortis velit hendrerit non. 
+                    Morbi lectus nulla, maximus non tempor at, condimentum sit amet est. 
+                    Nullam vitae nibh in mauris consequat suscipit sed nec ligula. Maecenas ipsum metus.</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option class="formulario__option" disabled selected>Seleccionar Talla</option>
+                        <option class="formulario__option">XS</option>
+                        <option class="formulario__option">S</option>
+                        <option class="formulario__option">M</option>
+                        <option class="formulario__option">L</option>
+                        <option class="formulario__option">XL</option>
+                        <option class="formulario__option">XXL</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" max="1000" step="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto"> End Store - Todos los derechos reservados 2024</p>
+    </footer>
+</body>
+</html>
